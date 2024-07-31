@@ -4,16 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let designGrade;
 
-    console.log(tIFrame.contentDocument )
-    console.log(tIFrame.contentWindow.document)
-
     if(tIFrame) {
         designGrade = tIFrame.contentDocument ? tIFrame.contentDocument.querySelector('[data-js="designGrade"]') : tIFrame.contentWindow.document.querySelector('[data-js="designGrade"]')
     } else {
         designGrade = document.querySelector('[data-js="designGrade"]')
     }
-
-    console.log(designGrade)
 
     if(!designGrade) return
 
