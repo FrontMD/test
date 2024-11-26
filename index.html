@@ -15,9 +15,8 @@
     <link rel='stylesheet' type='text/css' href='css/style.css'>
 </head>
 <body>
-    <button type="button" data-target="param1" onclick="ym(99045668,'reachGoal','test-target')">Кнопка 1</button>
-    <button type="button" data-target="param2" onclick="ym(99045668,'reachGoal','test-target')">Кнопка 2</button>
-
+    <a href="https://www.google.ru/" data-target="param1" onclick="ym(99045668,'reachGoal','test-target'); return true;">Кнопка 1 JS цель</button>
+    <a href="https://www.google.ru/" data-target="param2">Кнопка 2 Переход по ссылке</button>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -25,7 +24,7 @@
     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
+    
     ym(99045668, "init", {
             clickmap:true,
             trackLinks:true,
@@ -34,6 +33,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/99045668" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
 
     <script type='text/javascript' src='js/script.js'></script>
 </body>
